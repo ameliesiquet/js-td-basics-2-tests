@@ -7,10 +7,10 @@ Attention, les ristournes ne sont pas cumulables.
 Ecrire un programme JS qui affiche le montant de la réduction accordée
 sur base de la situation de l’acheteur et du montant de ses achats.
 */
-const montant =125;
+const montant =60;
 const remise= montant*0.1;
 const remise2= montant*0.05;
-const enfants=2;
+const enfants=3;
 
 
 
