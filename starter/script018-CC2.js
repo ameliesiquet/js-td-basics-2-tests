@@ -22,8 +22,22 @@ BONNE CHANCE 😀
 */
 
 // sans bonus
+const scoreJohn= [89, 120, 103];
+const scoreMike = [116,94,123];
 
+/* calculer moyenne : (1+2+3) /3 */
+const moyenneJohn = (89+120+103)/3;
+const moyenneMike = (116+94+123)/3;
 
+if (moyenneJohn>moyenneMike){
+    console.log(`L'équipe de John gagne avec ${moyenneJohn}`);
+}
+else if (moyenneJohn===moyenneMike){
+    console.log("Les deux équipes ont le même score");
+}
+else{
+    console.log(`L'équipe de Mike gagne avec ${moyenneMike}`)
+}
 
 // avec bonus
 
