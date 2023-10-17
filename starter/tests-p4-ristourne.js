@@ -7,6 +7,20 @@ Attention, les ristournes ne sont pas cumulables.
 Ecrire un programme JS qui affiche le montant de la réduction accordée
 sur base de la situation de l’acheteur et du montant de ses achats.
 */
+const montant =125;
+const remise= montant*0.1;
+const remise2= montant*0.05;
+const enfants=2;
+
+
+
+if((montant>=50 && enfants>=3) || montant>=125){
+    prixtotal=remise;
+}
+else {
+    prixtotal=remise2
+}
+console.log(`Le montant de la réduction accordée est à ${prixtotal}`)
 
 /* Valeurs de test :
 - achat de 50 euros et moins de 3 enfants : 5% = 2.5€
