@@ -6,8 +6,8 @@
 Initalisez la variable firstName à John et la variable age à 14
 */
 
-var firstName = 'John';
-var age = 14;
+let firstName = 'John';
+let age = 20;
 
 // 16 - 1. L'opérateur ternaire
 
@@ -16,7 +16,8 @@ var age = 14;
 1. Écrivez une expression ternaire pour afficher "John boit des bières" ou "John boit des jus" selon qu'il est majeur ou pas.
 2. Testez en changeant l'âge de John (14 ans, 24 ans)
 */
-
+let message = (age>=18) ? "John boit des bières" : "John boit des jus";
+console.log(message)
 
 
 /*
@@ -24,11 +25,19 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 1. Affecter, selon qu'on est majeur ou pas, la valeur "bières" ou la valeur "jus" à la variable drink 
 2. Afficher "John boit des …" (l'affichage s'adapte à l'âge de John, tester différents cas)
 */
-
+let age2 =19
+let drink =(age2>=18) ? "bières" : "jus";
+console.log(`${firstName} boit des ${drink}`)
 
 
 /* Faites la même chose en utilisant un if / else */
-
+let age3= 9;
+if (age3>=18){
+    drink="bières";
+}else{
+    drink="jus";
+}
+console.log(`${firstName} boit des ${drink}`)
 
 
 
@@ -45,6 +54,22 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 	- dans tous les autres cas, "John fait autre chose"
 3. Testez les différents cas de figure en changeant la profession de John
 */
+const job= "instituteur";
+const profession= prompt(`Quel est la profession de ${firstName}?`)
+switch (profession){
+    case "professeur":
+    case "instituteur":
+        console.log(`${firstName} enseigne la programmation aux enfants`);
+        break;
+    case "chauffeur":
+        console.log(`${firstName} conduit un taxi à Lisbonne`);
+        break;
+    case "designer":
+        console.log(`${firstName} conçoit de beaux sites web`);
+        break;
+    default:
+        console.log(`${firstName} fait autre chose`);
+}
 
 
 
@@ -58,6 +83,24 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 3. Testez les différents cas de figure en changeant l'âge de John
 4. Testez avec un âge de 7 ans en enlevant la 2e instruction break pour voir ce que cela a comme impact
 */
+const agee = 7; // Changez l'âge ici pour tester différents cas
+
+switch (true) {
+    case agee < 13:
+        console.log(`${firstName} est un garçon`);
+        break;
+    case agee >= 13 && agee <= 20:
+        console.log(`${firstName} est un adolescent`);
+        break;
+    case agee > 20 && agee <= 30:
+        console.log('${firstName} est un jeune homme');
+        break;
+    default:
+        console.log('${firstName} est un homme');
+        break;
+}
+
+
 
 
 
@@ -76,6 +119,23 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
   	— c.-à-d. qu'elle n'a entré aucun de ces qautre mots-là),
  	 affichez "Je n'ai pas compris !"
 */
+const meteo = prompt("Quel temps fait-il dehors ? Répondez par un des quatre mots suivants :soleil, vent, pluie ou neige.");
+switch (meteo){
+    case "soleil":
+        console.log("Sortez en t-shirt.")
+        break
+    case "vent":
+        console.log("Sortez en pull");
+        break
+    case "pluie":
+        console.log("Sortez en blouson");
+        break
+    case "neige":
+        console.log("Restez chaud à la maison");
+        break
+    default:
+        console.log("Je n'ai pas commpris !");
+}
 
 // b) Switch sans break
 
@@ -85,6 +145,8 @@ MEILLEURE PRATIQUE : utiliser l'expression ternaire pour affecter une valeur ou 
 1. Demandez à l'utilisateur d'entrer le numéro du jour de la semaine
 2. Affichez ensuite dans la console le message suivant : "Les jours suivants se sont déjà écoulés depuis le début de la semaine : …, …, …"
 */
+const joursemaine = prompt("Entrez le numéro du jour de la semaine");
+
 
 
 
