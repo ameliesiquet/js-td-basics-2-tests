@@ -8,3 +8,31 @@ affiche dasn la console "Erreur : jour non reconnu !"
 - Testez si la variable qui conntienyt le nom du jour n'ets pas vide et,
 dans ce cas, affichez dans la console le message "Demain, nous serons …"
 */
+const jouractuel ="jeudi";
+
+switch (jouractuel){
+    case "lundi":
+        joursuivant= "mardi";
+        break;
+    case "mardi":
+        joursuivant= "mercredi";
+        break;
+    case "mercredi":
+        joursuivant= "jeudi";
+        break;
+    case "jeudi":
+        joursuivant= "vendredi";
+        break;
+    case "vendredi":
+        joursuivant= "samedi";
+        break;
+    case "samedi":
+        joursuivant= "dimanche";
+        break;
+    default:
+        console.log("Erreur : jour non reconnu !");
+}
+if (joursuivant){
+    console.log(`Demain nous serons ${joursuivant}`)
+}else{
+}
