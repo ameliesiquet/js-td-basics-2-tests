@@ -93,14 +93,15 @@ if (!(entrernombre3 >100)){
 const entrernombre4 = prompt("Entrez un nombre");
 
 if (entrernombre4 > 0) {
-    console.log(`${nombre} est positif.`);
-}
-if (entrernombre4 < 0) {
-    console.log(`${nombre} est négatif.`);
-}
-if (entrernombre4 === 0) {
-    console.log(`${nombre} est nul.`);
-}
+    console.log(`${nombre} est positif.`);}
+    else if (entrernombre4 < 0) {
+        console.log(`${nombre} est négatif.`);
+    }
+    else{
+        console.log(`${nombre} est nul.`);
+    }
+
+
 
 
 // 2°) Autre écriture pour le même test : le if / elseif / else
@@ -160,15 +161,14 @@ d) s'il neige, affichez "Restez au chaud à la maison."
 e) dans tous les autres cas (si la personne n'a rien répondu de tout ça —
   c.-à-d. qu'elle n'a entré aucun de ces qautre mots-là), affichez "Je n'ai pas compris !"
 */
-const meteo =prompt( "Entrez:Quel temps fait-il dehors? Répondez par un des quatre mots suivants :\n" +
-    "  soleil, vent, pluie ou neige.")
+const meteo =prompt( "Quel temps fait-il dehors? Répondez par un des quatre mots suivants :soleil, vent, pluie ou neige.")
 if (meteo==="vent"){
     console.log("Sortez en pull");
 }
-if (meteo==="pluie"){
+else if (meteo==="pluie"){
     console.log("Sortez en blouson")
 }
-if (meteo==="neige"){
+else if (meteo==="neige"){
     console.log("Restez chaud à la maison");
 }
 else{

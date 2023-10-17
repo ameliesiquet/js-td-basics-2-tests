@@ -14,8 +14,7 @@
 1. Ecrivez un test dont la condition est true
 2. Dans le bloc, affichez "Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher"
 */
-const conditiontrue ="true";
-if (conditiontrue) {
+if (true) {
     console.log("Je suis dans un bloc d'instructions soumis à une condition qui est toujours vraie, je vais donc toujours m'afficher");
 }
 
@@ -24,8 +23,7 @@ if (conditiontrue) {
 1. Ecrivez un test dont la condition est false
 2. Dans le bloc, affichez "Bon, je cause toujours, mais vu que je suis dans un bloc d'instructions soumis à une condition qui est toujours fausse, ce que je dis ne va jamais s'afficher"
 */
-const conditionfalse ="false";
-if (conditionfalse){
+if (false){
     console.log("Bon, je cause toujours, mais vu que je suis dans un bloc d'instructions soumis à une condition qui est toujours fausse, ce que je dis ne va jamais s'afficher");
 }
 
@@ -60,7 +58,7 @@ if (bonjour ==="Bonjour!") {
 1. Demandez à l'utilisateur d'entrer un nombre et enregistrez ce nombre dans une constante nombre 
 2. Si ce nombre est positif, affichez "… est positif", sinon, affichez "… est négatif ou nul"
 */
-const entrernombre = prompt("Entrez un nombre")
+const entrernombre = Number(prompt("Entrez un nombre"))
 if (entrernombre>0){
     console.log(`${entrernombre} est positif`)
 }
@@ -122,7 +120,7 @@ if(BMIMark>BMIJohn) {
 /*
 Ecrire un programme qui teste si un nombre entré par l’utilisateur est pair ou impair.
 */
-const nombreentre = prompt("Entrez un nombre");
+const nombreentre = Number(prompt("Entrez un nombre"));
 if (nombreentre%2==0) {
     console.log("Le nombre est pair");
 }
