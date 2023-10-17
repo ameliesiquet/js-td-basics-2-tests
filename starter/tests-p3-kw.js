@@ -7,6 +7,23 @@ Les 31 à 50èmes KW sont à 20 centimes le KW
 Les 51 à 70èmes KW sont à 15 centimes le KW
 Les KW suivants sont à 10 centimes le KW
 */
+const nombreKW = 80;
+let cout = 0;
+
+
+if (nombreKW===30){
+    cout= nombreKW*25;
+}
+else if (nombreKW>30 && nombreKW<=50){
+    cout= 30*25 + (nombreKW-30)*20
+}
+else if (nombreKW>50 && nombreKW<=70){
+    cout= 30*25 + 20*20 + (nombreKW-50)*15
+}else{
+    cout= 30*25 + 20*20 + 20*15 + (nombreKW-70)*10
+}
+console.log(`Le côut est à ${cout}`)
+
 
 /*
 Valeurs de test :
