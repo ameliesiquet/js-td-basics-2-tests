@@ -15,3 +15,21 @@ calcule et affiche la somme versée aux restos du cœur.
 - 200€ (remise de 20€, 2€ versés)
 - 1000€ (remise de 100€, 2€ versés)
 */
+
+const prixachat = 60;
+const remise = prixachat*0.1;
+const prixtotal= prixachat-remise;
+const remisedon =remise*0.1;
+const prixcoeurs = remisedon
+
+
+if (prixachat>25){
+    prixtotal===remise
+
+    if(remise>5 && remisedon<=2){
+        prixcoeurs===prixcoeurs
+    }else{
+        prixcoeurs===prixtotal
+    }
+}
+console.log(`La somme versé aux restos du coeur est ${prixcoeurs} `)
