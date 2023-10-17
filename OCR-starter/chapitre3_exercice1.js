@@ -8,7 +8,8 @@ affiche dasn la console "Erreur : jour non reconnu !"
 - Testez si la variable qui conntienyt le nom du jour n'ets pas vide et,
 dans ce cas, affichez dans la console le message "Demain, nous serons …"
 */
-const jouractuel ="jeudi";
+const jouractuel ="llol";
+let joursuivant;
 
 switch (jouractuel){
     case "lundi":
