@@ -47,6 +47,7 @@ Etapes :
 	* une année divisible par 400 (par ex. 2000)
 	Au cas où vous n'auriez pas encore bien saisi la règle, on est bien d'accord que
 	2000 et 2004 sont bissextiles, 2006 et 2100 ne le sont pas :)
+
 */
 var year = Number(prompt("Entrez une année :"));
 var isBessextile;
